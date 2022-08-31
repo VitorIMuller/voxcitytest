@@ -20,24 +20,28 @@ export default function HomePage() {
         }
     }
     return (
-        <form onSubmit={handleSignUp}>
-            <input
-                type='text'
-                placeholder="Nome"
-                onChange={(e) => setName(e.target.value)}
-                value={name}
-                required />
-            <input
-                type='password'
-                placeholder="Senha"
-                onChange={(e) => setPassword(e.target.value)}
-                value={password} />
-            <input
-                type='text'
-                placeholder="Cpf"
-                onChange={(e) => setCpfNumber(e.target.value)}
-                value={cpfMask(cpfNumber)} />
-            <button type="submit">Enviar</button>
-        </form>
+        <div className="Container">
+            <form onSubmit={handleSignUp}>
+                <div className="AlignForm">
+                    <input
+                        type='text'
+                        placeholder="Nome"
+                        onChange={(e) => setName(e.target.value)}
+                        value={name}
+                        required />
+                    <input
+                        type='password'
+                        placeholder="Senha"
+                        onChange={(e) => setPassword(e.target.value)}
+                        value={password} />
+                    <input
+                        type='text'
+                        placeholder="Cpf"
+                        onChange={(e) => setCpfNumber(e.target.value)}
+                        value={cpfMask(cpfNumber)} />
+                    <button className="btn" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
     )
 }
