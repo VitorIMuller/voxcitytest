@@ -1,4 +1,6 @@
 ## VoxCity Test
+See the app live
+https://voxcitytest.vercel.app/
 ## How to run
 
 1. Clone this repository
